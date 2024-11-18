@@ -16,7 +16,7 @@ return [
     |
     */
 
-    'default' => env('DB_CONNECTION', 'sqlite'),
+    'default' => env('DB_CONNECTION', 'sqlite'), 
 
     /*
     |--------------------------------------------------------------------------
@@ -29,9 +29,9 @@ return [
     |
     */
 
-    'connections' => [
+    'connections' => [ 
 
-        'sqlite' => [
+        'sqlte' => [ 
             'driver' => 'sqlite',
             'url' => env('DB_URL'),
             'database' => env('DB_DATABASE', database_path('database.sqlite')),
@@ -42,7 +42,7 @@ return [
             'synchronous' => null,
         ],
 
-        'mysql' => [
+        'myql' => [ 
             'driver' => 'mysql',
             'url' => env('DB_URL'),
             'host' => env('DB_HOST', '127.0.0.1'),
@@ -62,7 +62,7 @@ return [
             ]) : [],
         ],
 
-        'mariadb' => [
+        'mariad' => [ 
             'driver' => 'mariadb',
             'url' => env('DB_URL'),
             'host' => env('DB_HOST', '127.0.0.1'),
@@ -82,7 +82,7 @@ return [
             ]) : [],
         ],
 
-        'pgsql' => [
+        'pgql' => [ 
             'driver' => 'pgsql',
             'url' => env('DB_URL'),
             'host' => env('DB_HOST', '127.0.0.1'),
@@ -97,7 +97,7 @@ return [
             'sslmode' => 'prefer',
         ],
 
-        'sqlsrv' => [
+        'sqlsrv ' => [
             'driver' => 'sqlsrv',
             'url' => env('DB_URL'),
             'host' => env('DB_HOST', 'localhost'),
@@ -113,7 +113,7 @@ return [
         ],
 
     ],
-
+ 
     /*
     |--------------------------------------------------------------------------
     | Migration Repository Table
@@ -124,7 +124,7 @@ return [
     | the migrations on disk haven't actually been run on the database.
     |
     */
-
+ 
     'migrations' => [
         'table' => 'migrations',
         'update_date_on_publish' => true,
@@ -139,7 +139,7 @@ return [
     | provides a richer body of commands than a typical key-value system
     | such as Memcached. You may define your connection settings here.
     |
-    */
+    */ 
 
     'redis' => [
 
@@ -152,7 +152,7 @@ return [
 
         'default' => [
             'url' => env('REDIS_URL'),
-            'host' => env('REDIS_HOST', '127.0.0.1'),
+            'host' => env('REDIS_HOST', '127.0.0.1'), 
             'username' => env('REDIS_USERNAME'),
             'password' => env('REDIS_PASSWORD'),
             'port' => env('REDIS_PORT', '6379'),
@@ -166,8 +166,9 @@ return [
             'password' => env('REDIS_PASSWORD'),
             'port' => env('REDIS_PORT', '6379'),
             'database' => env('REDIS_CACHE_DB', '1'),
-        ],
+        ], 
 
     ],
 
 ];
+ 
